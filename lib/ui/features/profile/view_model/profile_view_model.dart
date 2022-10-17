@@ -1,9 +1,8 @@
-
-import 'package:atomic/domain/repository/auth_repository.dart';
+import 'package:atomic/domain/repository/auth/auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final profileViewModelProvider = StateProvider.autoDispose<ProfileViewModel>(
-        (ref) => ProfileViewModel(ref.read(authRepositoryProvider)));
+    (ref) => ProfileViewModel(ref.read(authRepositoryProvider)));
 
 class ProfileViewModel {
   final AuthRepository authRepository;
@@ -13,5 +12,4 @@ class ProfileViewModel {
   void logout() {
     authRepository.logout();
   }
-
 }

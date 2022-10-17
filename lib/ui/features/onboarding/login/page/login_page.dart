@@ -1,4 +1,4 @@
-import 'package:atomic/ui/features/onboarding/login/login_view_model.dart';
+import 'package:atomic/ui/features/onboarding/login/view_model/login_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

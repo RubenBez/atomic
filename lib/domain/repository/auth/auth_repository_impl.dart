@@ -1,18 +1,17 @@
 import 'package:atomic/domain/providers/auth_state_notifier.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:atomic/domain/repository/auth/auth_repository.dart';
 
-final authRepositoryProvider =
-    StateProvider.autoDispose<AuthRepository>((ref) => AuthRepository(ref.read(authStateNotifier)));
-
-class AuthRepository {
+class AuthRepositoryImpl implements AuthRepository {
   final AuthStateNotifier _authStateNotifier;
 
-  AuthRepository(this._authStateNotifier);
+  AuthRepositoryImpl(this._authStateNotifier);
 
+  @override
   void logout() {
     _authStateNotifier.logout();
   }
 
+  @override
   void login() {
     _authStateNotifier.signInWithEmailPassword("email", "password");
   }

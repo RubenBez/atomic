@@ -1,5 +1,5 @@
 
-import 'package:atomic/ui/features/profile/profile_view_model.dart';
+import 'package:atomic/ui/features/profile/view_model/profile_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

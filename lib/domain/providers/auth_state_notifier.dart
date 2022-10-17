@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final authStateNotifier =
-    ChangeNotifierProvider<AuthStateNotifier>((ref) => AuthStateNotifier(ref));
+    ChangeNotifierProvider<AuthStateNotifier>((ref) => AuthStateNotifier());
 
 class AuthStateNotifier extends ChangeNotifier {
   bool _isAuthenticated = false;
 
-  final Ref ref;
-
-  AuthStateNotifier(this.ref) {
+  AuthStateNotifier() {
     _isAuthenticated = false;
     notifyListeners();
   }

@@ -1,4 +1,4 @@
-import 'package:atomic/domain/repository/auth_repository.dart';
+import 'package:atomic/domain/repository/auth/auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final loginViewModelProvider = StateProvider.autoDispose<LoginViewModel>(

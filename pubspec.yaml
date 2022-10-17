@@ -21,6 +21,7 @@ dependencies:
   dio: 4.0.6
   google_fonts: 3.0.1
   logger: 1.1.0
+  mason_cli: ^0.1.0-dev.37
 
 dev_dependencies:
   flutter_test:
