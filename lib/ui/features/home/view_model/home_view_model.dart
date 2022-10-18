@@ -1,9 +1,9 @@
-import 'package:atomic/domain/repository/auth/auth_repository.dart';
+import 'package:atomic/domain/view_model/view_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final homeViewModelProvider = StateProvider.autoDispose<HomeViewModel>(
-    (ref) => HomeViewModel());
+final homeViewModelProvider =
+    StateProvider.autoDispose<HomeViewModel>(HomeViewModel.new);
 
-class HomeViewModel {
-
+class HomeViewModel extends ViewModel {
+  HomeViewModel(super.ref);
 }

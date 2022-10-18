@@ -9,9 +9,10 @@ class ProfilePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
+      appBar: AppBar(),
       body: Center(
         child: ElevatedButton(
-          child: const Text("Logout"),
+          child: const Text('Logout'),
           onPressed: () => ref.read(profileViewModelProvider).logout(),
         )
       )

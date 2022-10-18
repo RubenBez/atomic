@@ -1,6 +1,6 @@
 import 'package:atomic/domain/providers/auth_state_notifier.dart';
-import 'package:atomic/domain/service/app_config/app_config_service_impl.dart';
-import 'package:atomic/ui/routing/router.dart';
+import 'package:atomic/domain/service/app_config/app_config.dart';
+import 'package:atomic/ui/routing/routing.dart';
 import 'package:atomic/ui/theme/theme.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -46,7 +46,7 @@ class App extends ConsumerWidget {
       routerDelegate: router.routerDelegate,
       debugShowCheckedModeBanner: false,
       theme: AtomicTheme.standard,
-      title: "Atomic",
+      title: 'Atomic',
     );
   }
 }

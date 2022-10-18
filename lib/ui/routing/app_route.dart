@@ -1,7 +1,3 @@
-
-import 'package:atomic/ui/routing/router.dart';
-
-
 class AppRoute {
   final String _path;
   final AppRoute? _parent;
