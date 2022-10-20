@@ -1,2 +1,4 @@
 bricks:
-  service: ^0.0.4
+  atomic_feature:
+    path: templates/atomic_feature
+  model: ^0.5.0

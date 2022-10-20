@@ -12,7 +12,7 @@ class LoginPage extends ConsumerWidget {
     return Scaffold(
       body: Center(
         child: ElevatedButton(
-          child: const Text("Login"),
+          child: const Text('Login'),
           onPressed: () {
             ref.read(loginViewModelProvider).login();
           },

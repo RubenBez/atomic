@@ -1,5 +1,5 @@
 import 'package:atomic/domain/providers/auth_state_notifier.dart';
-import 'package:atomic/domain/repository/auth/auth_repository.dart';
+import 'package:atomic/domain/repository/auth_repository/auth_repository.dart';
 
 class AuthRepositoryImpl implements AuthRepository {
   final AuthStateNotifier _authStateNotifier;

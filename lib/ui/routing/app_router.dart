@@ -1,7 +1,7 @@
 import 'package:atomic/domain/providers/auth_state_notifier.dart';
 import 'package:atomic/ui/features/home/page/home_page.dart';
-import 'package:atomic/ui/features/onboarding/login/page/login_page.dart';
-import 'package:atomic/ui/features/profile/page/profile_page.dart';
+import 'package:atomic/ui/features/onboarding/login/view/login_page.dart';
+import 'package:atomic/ui/features/profile/view/profile_page.dart';
 import 'package:atomic/ui/routing/router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';

@@ -1,0 +1,17 @@
+name: atomic_feature
+description: A brick to create a feature
+version: 0.1.0
+
+vars:
+  feature_name:
+    type: string
+    description: The feature name
+    prompt: What is the feature name?
+  state_management:
+    type: enum
+    default: riverpod
+    description: The features state management
+    prompt: What is the features state management?
+    values:
+      - riverpod
+      - none

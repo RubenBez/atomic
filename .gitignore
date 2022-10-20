@@ -343,4 +343,8 @@ fabric.properties
 # Mason
 .mason
 
+# Generated source
+*.g.dart
+*.freezed.dart
+
 # End of https://www.toptal.com/developers/gitignore/api/flutter,android,androidstudio,xcode,swift,cocoapods
